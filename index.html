@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE PES DAY FUTO STUDENT CHAPTER 2022</title>
+    <script src="https://kit.fontawesome.com/e26e4a68b3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Inter&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/globals.css" />
+    <script src="https://kit.fontawesome/8e8ce04397.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        darkGreen: '#328704',
+                        lightGreen: '#98E8BC',
+                    },
+                    screens: {
+                        'sm': '400px'
+                    }
+                },
+            },
+        };
+
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+            localStorage.getItem('ascf-theme') === 'dark' ||
+            (!('ascf-theme' in localStorage) &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+
+<body class="text-gray-500 dark:text-gray-400 dark:bg-gray-900">
+    <button id="toTopBtn"
+        class="hidden transition-all fixed bottom-6 right-6 z-50 border-none outline-none bg-gray-900 text-lightGreen dark:text-gray-900 dark:bg-lightGreen hover:color-lightGreen cursor-pointer rounded-full w-8 h-8 lg:w-12 lg:h-12 hover:opacity-90 dark:opacity-80 dark:hover:opacity-90">
+        <i class="fa fa-angle-up fa-2x lg:fa-3x"></i>
+    </button>
+    <button id="toBottomBtn"
+        class="transition-all fixed bottom-6 right-6 z-50 border-none outline-none bg-gray-900 text-lightGreen dark:text-gray-900 dark:bg-lightGreen hover:color-lightGreen cursor-pointer rounded-full w-8 h-8 lg:w-12 lg:h-12 hover:opacity-90 dark:opacity-80 dark:hover:opacity-90">
+        <i class="fa fa-angle-down fa-2x lg:fa-3x"></i>
+    </button>
+    <main>
+        <section id="hero">
+            <header>
+                <img src="" alt="" id="logo" />
+                <nav>
+                    <ul>
+                        <li class="text-darkGreen"><a href="about.html">About</a></li>
+                        <li class="text-red-500"><a>Register</a></li>
+                        <li class="text-lightGreen"><a>Gallery</a></li>
+                        <li><a>Activities</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <button id="theme-toggle" type="button" title="Toggle theme"
+                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </section>
+            </header>
+        </section>
+        <section id="about" class="flex justify-center items-center px-4">
+            <div class="flex justify-center flex-wrap lg:max-w-4xl md:max-w-3xl sm:px-4 lg:px-0 md:space-x-12">
+                <section class="flex-1 py-6">
+                    <div class="sm:text-center sm:flex sm:justify-center md:block md:text-left tracking-wide border-b-2 border-solid border-lightGreen">
+                        <h2 class="md:font-extrabold text-xl sm:text-3xl">
+                            About
+                        </h2>
+                        <h2 class="text-3xl sm:before:content-['\00a0'] md:before:content-['']">the paper contest</h2>
+                    </div>
+            
+                    <div class="space-y-2 my-4">
+                        <p class="text-sm tracking-wide">
+                            Students compete against other students in their students chapter
+                            for the opportunity to advance to the national
+                            Student Paper Contest held during STECON and win chapter PRIZES. 
+                        </p>
+                        <p class="text-sm tracking-wide">
+            
+                            Contestants enter an abstract of their paper and 
+                            present it on the day of the submission. The papers of the
+                            winners who proceed to the national Student Paper Contest at 
+                            STECON will be published on IEEEPES FUTO STUDENT's CHAPTER social media handles and website.
+                        </p>
+                    </div>
+            
+                    <div class="sm:text-center md:text-left"><button class="transition-all ease-in-out bg-lightGreen/80 text-gray-900 hover:bg-lightGreen font-bold py-2 rounded-full px-4 md:w-full lg:w-auto sm:w-1/2 sm:text-lg focus:ring-4 focus:outline-none focus:ring-lightGreen/80">Read more</button></div>
+            
+                </section>
+                <img src="https://scontent.fabb1-1.fna.fbcdn.net/v/t39.30808-6/273640072_1351523918631016_8885827760949313340_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeGiuekC2vMFRT6a1QYXk7GIxkGN9WYsujnGQY31Ziy6Oc3hCs5XARd7BYHfYXxzNJ-ZN9LWX48AhIw4JsTKSL_K&_nc_ohc=ty63M3KLYYMAX_X-euT&_nc_zt=23&_nc_ht=scontent.fabb1-1.fna&oh=00_AT_HKO1BmhgtFFm-6tbeNyQeuexL2VGLeq247-TKdK0AKQ&oe=626094E2" alt="About STECON 2022" class="flex-1 md:max-w-[50%] rounded-lg shadow-lg shadow-black">
+            </div>
+        </section>
+        <section id="registration"
+            class="text-gray-900 bg-gradient-to-r from-lightGreen to-darkGreen mt-6 flex items-center flex-wrap justify-around py-8 px-4">
+            <section class="shrink text-center">
+                <h1 class="text-4xl font-extrabold uppercase tracking-widest">It is Happening Now</h1>
+
+                <p class="text-sm my-4 max-w-fit text-gray-900/60 font-semibold tracking-wide">
+                    Once you are confident you are eligible to participate. <br> click the "Register now" button to start your application. 
+                </p>
+
+                <a href=""
+                    class="bg-transparent hover:bg-gray-900 text-gray-900 font-semibold hover:text-white py-2 px-4 border-2 border-solid border-gray-900 rounded hover:border-transparent transition-all ease-in-out delay-50 focus:ring-4 focus:outline-none focus:ring-gray-900/90"
+                    style="">REGISTER NOW</a>
+            </section>
+            <section class="justify-around main-section grow flex flex-initial text-center mt-8 space-x-6 lg:max-w-[40rem]">
+                <section class="test flex-1">
+                    <div
+                        class="countdown-div items-center justify-center rounded-md border border-lightGreen bg-lightGreen mb-4 max-w-[-22rem] shadow-lg shadow-black relative lg:after:right-[-3%] before:absolute before:bg-gray-900 before:w-[15px] before:-left-1 before:h-[8px] before:rotate-90 after:absolute after:bg-gray-900 after:w-[15px] after:-right-1 after:h-[8px] after:-rotate-90">
+                        <h2 id="days-left" class="font-extrabold text-gray-900 text-3xl lg:py-8 sm:py-[1.5rem]">00</h2>
+                        <div class="absolute top-1/2 z-10 h-px bg-gray-900 w-full"></div>
+                    </div>
+                    <p class="font-semibold text-sm text-gray-900/60">DAYS</p>
+                </section>
+                <section class="test flex-1">
+                    <div
+                        class="countdown-div items-center justify-center rounded-md border border-lightGreen bg-lightGreen mb-4 max-w-[-22rem] shadow-lg shadow-black relative lg:after:right-[-3%] before:absolute before:bg-gray-900 before:w-[15px] before:-left-1 before:h-[8px] before:rotate-90 after:absolute after:bg-gray-900 after:w-[15px] after:-right-1 after:h-[8px] after:-rotate-90">
+                        <h2 id="hours-left" class="font-extrabold text-gray-900 text-3xl lg:py-8 sm:py-[1.5rem]">00</h2>
+                        <div class="absolute top-1/2 z-10 h-px bg-gray-900 w-full"></div>
+                    </div>
+                    <p class="font-semibold text-sm text-gray-900/60">HOURS</p>
+                </section>
+                <section class="test flex-1">
+                    <div
+                        class="countdown-div items-center justify-center rounded-md border border-lightGreen bg-lightGreen mb-4 max-w-[-22rem] shadow-lg shadow-black relative lg:after:right-[-3%] before:absolute before:bg-gray-900 before:w-[15px] before:-left-1 before:h-[8px] before:rotate-90 after:absolute after:bg-gray-900 after:w-[15px] after:-right-1 after:h-[8px] after:-rotate-90">
+                        <h2 id="minutes-left" class="font-extrabold text-gray-900 text-3xl lg:py-8 sm:py-[1.5rem]">00</h2>
+                        <div class="absolute top-1/2 z-10 h-px bg-gray-900 w-full"></div>
+                    </div>
+                    <p class="font-semibold text-sm text-gray-900/60">MINUTES</p>
+                </section>
+                <section class="test flex-1">
+                    <div
+                        class="countdown-div items-center justify-center rounded-md border border-lightGreen bg-lightGreen mb-4 max-w-[-22rem] shadow-lg shadow-black relative lg:after:right-[-3%] before:absolute before:bg-gray-900 before:w-[15px] before:-left-1 before:h-[8px] before:rotate-90 after:absolute after:bg-gray-900 after:w-[15px] after:-right-1 after:h-[8px] after:-rotate-90">
+                        <h2 id="seconds-left" class="font-extrabold text-gray-900 text-3xl lg:py-8 sm:py-[1.5rem]">00</h2>
+                        <div class="absolute top-1/2 z-10 h-px bg-gray-900 w-full"></div>
+                    </div>
+                    <p class="font-semibold text-sm text-gray-900/60">SECONDS</p>
+                </section>
+            </section>
+        </section>
+        <section id="gallery"
+            class="md:flex justify-center items-center py-6 px-4 text-gray-900 dark:text-gray-200">
+            <div class="md:flex justify-center flex-wrap lg:max-w-md md:max-w-3xl sm:px-4 lg:px-0 md:space-x-12">
+                <section class="md:max-w-[75%] py-6 sm:flex sm:flex-col items-center">
+                    <!-- <section class="flex-1"></section> -->
+                    <section class="flex items-center space-x-4">
+                        <i class="fa fa-camera text-5xl"></i>
+                        <section class="">
+                            <h3 class="font-extrabold text-2xl">Our</h3>
+                            <h2 class="font-extrabold text-4xl">Gallery</h2>
+                        </section>
+                    </section>
+                    <section class="mt-10">
+                        <p class="text-sm">
+                            Check out our up coming events and past events
+                            And meet some of our excutives, past excutives and core students members at IEEE FUTO STUDENT BRANCH. <br>
+                        </p>
+                    </section>
+                </section>
+            </div>
+            <div id="default-carousel" class="sm:grow sm:w-full md:min-w-[40%] relative rounded-lg shadow-lg shadow-black"
+                data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                        data-carousel-item="">
+                        <span
+                            class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
+                            Slide</span>
+                        <img src="assets/ieeetechbrushup.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                        data-carousel-item="">
+                        <img src="assets/ieeeextendedexco.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." style="
+        ">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform z-10 translate-x-full"
+                        data-carousel-item="">
+                        <img src="assets/ieeefuto.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                        data-carousel-item="">
+                        <img src="assets/pesday.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." style="
+        ">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                        data-carousel-item="">
+                        <img src="assets/ieeeactivities.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." style="
+        ">
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                        data-carousel-item="">
+                        <img src="assets/IEEE_Students_logo.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." style="
+        ">
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                        data-carousel-item="">
+                        <img src="assets/IEEE.png"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." style="
+        ">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button"
+                        class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                        aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button"
+                        class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white dark:bg-gray-800"
+                        aria-current="true" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button"
+                        class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                        aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="3"></button>
+                            <button type="button"
+                                class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                                aria-current="false" aria-label="Slide 3" data-carousel-slide-to="4"></button>
+                                <button type="button"
+                                    class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                                    aria-current="false" aria-label="Slide 3" data-carousel-slide-to="5"></button>
+                                    <button type="button"
+                                        class="w-3 h-3 rounded-full !bg-gray-800/50 !hover:bg-gray-800 bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                                        aria-current="false" aria-label="Slide 3" data-carousel-slide-to="6"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev="">
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="hidden">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next="">
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                        <span class="hidden">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section id="conference-activities" class="">
+        <h2 class="pt-4 text-3xl font-extrabold uppercase tracking-widest text-gray-800 text-center bg-gradient-to-r from-lightGreen to-darkGreen border-b-2 border-solid border-white dark:border-gray-900">Important Deadlines & Details</h2>
+        <section class="md:flex">    
+            <section class="sm:p-4 lg:p-10 pt-3 md:p-16 md:pt-6 bg-gradient-to-r from-lightGreen to-darkGreen text-gray-800 md:-mr-16">
+                    <ul>
+                        <li class="p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl"> Paper Submission Opens : 22 April 2022</h3>
+                                <!--<i class="fa-solid fa-compass-drafting text-2xl"></i>-->
+                            </section>
+
+                            <p class="text-sm font-light">
+                                Once registration are completed you can submit your abstract 
+                                in doc format to (gregoryamaefule@ieee.org) be reviewed by our judges.
+                                Only single-authored papers are allowed for this contest and
+                                they must be based on original work. Abstracts can be a maximum of 425 words. 
+                            </p>
+                        </li>
+                        <li class="mt-0 p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Paper Submission Ends : 30 April 2022</h3>
+                                <!--<i class="fa-solid fa-jet-fighter text-2xl"></i>-->
+                            </section>
+
+                            <p class="text-sm font-light">
+                                If you have missed your deadline, 
+                                you cannot participate and you will need to wait until next year to submit.
+                            </p>
+                        </li>
+                        <li class="mt-0 p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Online Contest Begins : 1 May 2022</h3>
+                                <!--<i class="fa-solid fa-book-open-reader text-2xl"></i>-->
+                            </section>
+
+                            <p class="text-sm font-light">
+                                After the close of paper submission, abstract of participants will be
+                                posted on our social media pages. All participants are expected to follow us on all handles
+                                and encourage your friends to do so. The number of engagements on your article will form 30% of your final score.
+                            </p>
+                        </li>
+                        <!--<li class="mt-0 p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Sporting Competitions</h3>
+                                <i class="fa-solid fa-medal text-2xl"></i>
+                            </section>
+
+                            <p class="text-sm font-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias, ipsum facilis quam natus alias voluptate porro ut
+                                ullam, maxime et est facere dolore excepturi quos rem, eaque earum
+                                veniam quod!
+                            </p>
+                        </li>-->
+                    </ul>
+                </section>
+
+                <section class="hidden md:block md:flex-auto md:w-24 md:h-24 md:p-14 md:text-center md:z-10 md:self-center md:text-5xl md:bg-gray-800 dark:text-darkGreen dark:bg-white md:text-white md:relative md:rounded-full">
+                    <i class="fa-solid fa-gears absolute fa-xl left-0 top-1/2 right-0"></i>
+                </section>
+
+                <section class="sm:p-4 flex-auto lg:p-10 pt-3 md:p-20 md:pt-6 bg-white text-gray-800 dark:text-gray-300 dark:bg-gray-800 text-white md:-ml-16">
+                    <ul>
+                        <li class="p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Online Contest Ends : 5 May 2022</h3>
+                                <!--<i class="fa-solid fa-industry text-2xl"></i>-->
+                            </section>
+
+                            <p class="text-sm font-light">
+                                Participate now will be graded based on the number of engagements on their abstract.
+                                There would be a prize for highest engagements from this category separate from the main prize.
+                            </p>
+                        </li>
+                        <li class="mt-0 p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Judges Announce Winners : 9 May 2022</h3>
+                                <!--<i class="fa-solid fa-building text-2xl"></i>-->
+                            </section>
+
+                            <p class="text-sm font-light">
+                                Winners of the contest would be notified and posted on our social media handles
+                            </p>
+                        </li>
+                        <li class="mt-0 p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Winners Receive Prize and are Published : 10 May 2022</h3>
+                                <!--<i class="fa-regular fa-podium text-2xl"></i>-->
+                            </section>
+
+                            <p class="text-sm font-light">
+                                Winners would recieve their respective prizes and their abstract published
+                            </p>
+                        </li>
+                        <!--<li class="mt-0 p-3 border-b-2 border-solid">
+                            <section class="flex items-center m-5 ml-0 font-extrabold">
+                                <h3 class="mr-2 text-xl">Technical Challenge - Robotic Contest</h3>
+                                <i class="fa-solid fa-robot text-2xl"></i>
+                            </section>
+
+                            <p class="text-sm font-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias, ipsum facilis quam natus alias voluptate porro ut
+                                ullam, maxime et est facere dolore excepturi quos rem, eaque earum
+                                veniam quod!
+                            </p>
+                        </li>-->
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section id="contact"
+            class="md:flex justify-center items-center py-8 px-4 dark:bg-slate-900 text-gray-800 dark:text-gray-200 flex-wrap">
+            <div class="md:flex justify-around items-center w-full flex-wrap space-y-10 text-center">
+                <section class="md:flex-1 md:max-w-[33%] text-left">
+                    <h3 class="font-bold text-xl mb-4 sm:text-center">CONTACT US</h3>
+        
+                    <form>
+                        <div class="relative z-0 mb-6 w-full group">
+                            <input type="name" name="floating_name"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-lightGreen focus:outline-none focus:ring-0 focus:border-lightGreen/90 peer"
+                                placeholder=" " required="">
+                            <label for="floating_name"
+                                class="absolute text-xs text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-lightGreen/90 peer-focus:dark:text-lighGreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+                        </div>
+                        <div class="relative z-0 mb-6 w-full group">
+                            <input type="email" name="floating_email" id="floating_email"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-lightGreen focus:outline-none focus:ring-0 focus:border-lightGreen/90 peer"
+                                placeholder=" " required="*">
+                            <label for="floating_email"
+                                class="absolute text-xs text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-lightGreen/90 peer-focus:dark:text-lighGreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+                        </div>
+                        <div class="relative z-0 mb-6 w-full group">
+                            <input type="subject" name="floating_subject" id="floating_subject"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-lightGreen focus:outline-none focus:ring-0 focus:border-lightGreen/90 peer"
+                                placeholder=" " required="*">
+                            <label for="floating_subject"
+                                class="absolute text-xs text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-lightGreen/90 peer-focus:dark:text-lighGreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Subject</label>
+                        </div>
+                        <div class="relative z-0 mb-6 w-full group">
+                            <textarea name="message" id="floating-message" type="Message" cols="30" rows="3"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-lightGreen focus:outline-none focus:ring-0 focus:border-lightGreen/90 peer"
+                                placeholder=" "></textarea>
+        
+                            <label for="floating_message"
+                                class="absolute text-xs text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-lightGreen/90 peer-focus:dark:text-lighGreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                        </div>
+        
+                        <div class="text-center"><button type="submit"
+                                class="transition-all ease-in-out font-semibold dark:text-gray-800 bg-lightGreen/90 focus:ring-4 focus:outline-none rounded-lg text-sm md:w-full sm:w-auto px-5 py-2.5 text-center hover:bg-lightGreen focus:ring-lightGreen/80">
+                                Submit
+                            </button></div>
+                    </form>
+                </section>
+                <section class="">
+                    <h3 class="font-bold text-xl mb-4">QUICK MENU</h3>
+        
+                    <ul class="flex flex-col gap-3 text-xs">
+                        <li><a href="#about" class="hover:underline">About</a></li>
+                        <li><a href="#registration" class="hover:underline">Register</a></li>
+                        <li><a href="#gallery" class="hover:underline">Gallery</a></li>
+                        <li><a href="#conference-activities" class="hover:underline">Activities</a></li>
+                        <li><a href="#contact" class="hover:underline">Contact</a></li>
+                    </ul>
+                </section>
+                <section class="">
+                    <h3 class="font-bold text-xl mb-4">SOCIALS</h3>
+        
+                    <ul class="flex flex-col gap-3 text-xs">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Linkedin</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
